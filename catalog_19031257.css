@@ -1,0 +1,507 @@
+
+
+/* DECLARING animation for glowing text*/
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6;
+    }
+    to {
+        text-shadow: 0 0 5px rgb(212, 77, 77), 0 0 10px #ec08c636, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073;
+    }
+  }
+
+/* DECLARING persolanized fonts */
+@font-face {
+    font-family: ethocentricrg;
+    src: url(Fonts/ethnocentricrg.ttf);
+  }
+
+@font-face {
+    font-family: nasalization;
+    src: url(Fonts/nasalization.ttf);
+}  
+
+@font-face {
+    font-family: conthrax;
+    src: url(Fonts/conthrax.ttf);
+}  
+
+/* Setting the page */
+store{
+    display: block;
+    font-family: nasalization; /* USING personalized fonts*/
+	font-style: bold;
+    background-color: #1A1A1D; /* Background of the page */
+	height: 100vh; 
+	background-size:100% 100%;
+	background-position: center;
+}
+
+/* Store details placemant and styling */
+storeDetails{
+    display:block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+/* Placement of image logo */
+logo{
+    content: url(Images/logo.png);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    height: 250px;
+}
+
+/* Store Name placement and styling */
+storeName{
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    font-family: ethocentricrg;
+    background: #2CADC4;
+    text-shadow: 4px 4px #A1133B;
+}
+
+/* Store Description placement and styling with animation*/
+description{
+    display: block;
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: ethocentricrg;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    /* GLOW animation */
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* store ABOUT US description placement and styling */
+aboutUs{
+    display: block;
+    font-size: 15px;
+    font-family: conthrax;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4%;
+    line-height: 1.6;
+    color: white;
+}
+aboutUs:hover{
+    transform:scale(1.2) ;
+
+}
+
+
+/*CSS for songs and their details*/
+songs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
+    background-color:rgb(149, 7, 64);
+    border: 3px solid #2CADC4;
+    border-radius: 25px;
+}
+songs::before{
+    content: "Available songs ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px #2CADC4;
+
+}
+
+/*CSS for songs individually*/
+song{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 2em 2em 2em;
+    width: 95%;
+    height: 450px;
+    border-radius: 15px;
+    background-color: #B7DEE1;
+}
+song:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Song description placement and styling */
+songDescription{
+    display: block;
+    float: left;
+    width: 60%;
+    height: 95%;
+
+}
+
+/* Song title placement and styling */
+songTitle{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(151, 7, 65);
+    text-align: center;
+}
+
+/* Song cover genralized placement and styling */
+songCover{
+    float: left;
+    transition: 0.3s;
+    height: 95%;
+    width: 43%;
+    border: 6px solid white;
+    border-radius: 7px;
+    box-shadow: 0 8px 16px 0 rgb(11, 60, 117);  
+}
+songCover:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.884);
+}
+
+/* Song cover individual placement and styling */
+songCover[coverID="C1"]{
+    content: url(Images/song1.jpg);  
+}
+
+songCover[coverID="C2"]{
+    content: url(Images/song2.jpg);  
+}
+
+songCover[coverID="C3"]{
+    content: url(Images/song3.jpg);  
+}
+
+songCover[coverID="C4"]{
+    content: url(Images/song4.jpg);  
+}
+
+songCover[coverID="C5"]{
+    content: url(Images/song5.jpg);  
+}
+
+songCover[coverID="C6"]{
+    content: url(Images/song6.jpg);  
+}
+
+songCover[coverID="C7"]{
+    content: url(Images/song7.jpg);  
+}
+
+songCover[coverID="C8"]{
+    content: url(Images/song8.jpg);  
+}
+
+songCover[coverID="C9"]{
+    content: url(Images/song9.jpg);  
+}
+
+songCover[coverID="C10"]{
+    content: url(Images/song10.jpg);  
+}
+
+songCover[coverID="C11"]{
+    content: url(Images/song11.jpg);  
+}
+
+songCover[coverID="C12"]{
+    content: url(Images/song12.jpg);  
+}
+
+/* Song genre placement and styling */
+genre{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: right;
+    margin-top: 10%;
+    padding: 1% 1% 1% 1%;
+    width: 50%;
+    border-radius: 15px;
+    background-color: white;
+}
+genre:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+genre::before{
+    padding:1em ;
+    content: "Genre: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+}
+
+/* Song album, song release, song language, song ratings generalized placement and styling */
+album,release,language,ratings{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: right;
+    margin-top: 2%;
+    padding: 1% 1% 1% 1%;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #D51C66;
+}
+
+/* Song album individual placement and styling */
+album:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+album::before{
+    padding:1em ;
+    content: "Album: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+}
+
+/* Song release individual placement and styling */
+release:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+release::before{
+    padding:1em ;
+    content: "Release Year: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+
+}
+
+/* Song language individual placement and styling */
+language:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+language::before{
+    padding:1em ;
+    content: "Language: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+
+}
+
+/* Song rating individual placement and styling */
+ratings:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+ratings::before{
+    padding:1em ;
+    content: "Ratings: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+
+}
+
+/* Song price placement and styling */
+price{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: right;
+    margin-top: 2%;
+    padding: 1% 1% 1% 1%;
+    width: 50%;
+    border-radius: 15px;
+    background-color: white;
+}
+price:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+price::before{
+    padding:1em ;
+    content: "Price: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #2CADC4;
+    text-shadow: 1px 1px white;
+
+}
+
+/* Song priduction team placement and styling */
+productionTeam{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: right;
+    margin-top: 1%;
+    padding: 0% 0% 2% 3%;
+    width: 35%;
+    border-radius: 15px;
+    background-color: #2CADC4;
+}
+productionTeam:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+productionTeam::before{
+    content: "Production Team ";
+    display: block;
+    font-size: 2em;
+    color: #950740;
+    text-align: center;
+    text-shadow: 1px 1px white;
+}
+
+/* Singer, featured artist, writer, producer, director placement and styling*/
+singer,featuredArtist,writer,producer,director{
+    padding: 10px;
+    font-size: 18px;
+    display: list-item;
+    list-style-type: square;
+}
+singer::before{
+    content: "Singer: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #D51C66;
+    text-shadow: 1px 1px white;
+}
+featuredArtist::before{
+    content: "Featuring: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #D51C66;
+    text-shadow: 1px 1px white;
+}
+writer::before{
+    content: "Writer: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #D51C66;
+    text-shadow: 1px 1px white;
+}
+producer::before{
+    content: "Producer: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #D51C66;
+    text-shadow: 1px 1px white;
+}
+director::before{
+    content: "Director: ";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #D51C66;
+    text-shadow: 1px 1px white;
+}
+
+/* DISPLAYING thank you message */
+songs::after{
+    display:block;
+    content: "Thank You for visiting us.";
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #2CADC4;
+    text-align: center;
+}
+
+/* Styling and placement of footer section */
+footer{
+    display:block;
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: auto;
+    border-radius: 15px;
+    margin: 1em 2.5em 1em 2.5em;
+    text-align: center;
+    font-size: 13px;
+    border: 3px solid #2CADC4;
+}
+
+/* Styling and placement of logo image in footer */
+footerLogo{
+    content: url(Images/logo.png);
+    padding-top: 10px;
+    text-align: center;
+    height: 100px;
+
+}
+
+/* Contact Details styling and placement */
+contactDetails{
+    display: block;
+    padding-top: 1%;
+    width: 100%;
+    color: white;;
+}
+
+/* Address placing and styling */
+address{
+    display: block;
+    width: 100%;
+}
+address::before{
+    content: "Address: ";
+    font-size: 15px;
+}
+
+/* Phone number placing and styling */
+phoneNumber{
+    display: block;
+    width: 100%;
+}
+phoneNumber::before{
+    content: "Number: ";
+    font-size: 15px;
+}
+
+/* Email placing and styling */
+email{
+    display: block;
+    width: 100%;
+}
+email::before{
+    content: "Email: ";
+    font-size: 15px;
+}
+
+/* Website url placing and styling */
+url{
+    display: block;
+    width: 100%;
+}
+url::before{
+    content: "Website: ";
+    font-size: 15px;
+}
+
+/* Copyright text placement and styling */
+copyright{
+    display: block;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
+

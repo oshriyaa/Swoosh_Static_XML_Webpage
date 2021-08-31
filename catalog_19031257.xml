@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Author: Oshriya Manandhar
+    XML file
+    Swoosh Music Store
+-->
+<?xml-stylesheet type="text/css" href="catalog_19031257.css"?>
+<!DOCTYPE store SYSTEM "catalog_19031257.dtd">
+<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Catalog_19031257.xsd">
+
+    <storeDetails>
+        <logo> </logo> <!--the logo of the store-->
+        <storeName> Swoosh Music</storeName> <!--The music store is name Swoosh Music Store-->
+        <description> &#xA; Since 2001 </description> <!--short description of the store-->
+        <aboutUs> Swoosh Music has been providing high quality songs and albums for decades. We aim to provide quality music experience to all customers at best price. Swoosh Music is your perfect destination for best quality music. We have it all. </aboutUs>
+    </storeDetails>
+
+    <!--all song details-->
+    <songs> 
+        <!--Display for song 1-->
+        <song songID="SN01" type="Single" length="3:07">
+            <songTitle> That's what I like </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C1"> </songCover>
+                <genre> Hip hop soul </genre>
+                <album> 24K Magic </album>
+                <release> 2017 </release>
+                <language> English </language>
+                <ratings> 3.7/5 </ratings>
+                <price discount="5%"> NRs. 450 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG07G" nationality="American"> Bruno Mars </singer>
+                <writer> Bruno Mars  </writer>
+                <writer> Christopher Brody Brown </writer>
+                <writer> Johnathan Yip </writer>
+                <producer> Shampoo Press &#38; Curl </producer>
+                <producer> The Stereotypes </producer>
+                <director> Jonathan Lia </director>
+            </productionTeam>
+        </song>
+
+        <!--Display for song 2-->
+        <song songID="SN02" type="Album Track" length="3:27">
+            <songTitle> Supermarket Flowers </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C2"> </songCover>
+                <genre> Soul </genre>
+                <album> ÷ </album>
+                <release> 2018 </release>
+                <language> English </language>
+                <ratings> 4/5 </ratings>
+                <price> NRs. 400 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG03G" nationality="British"> Ed Sheeran </singer>
+                <writer> Ed Sheeran  </writer>
+                <writer> Johnny McDaid </writer>
+                <writer> Benjamin Levin</writer>
+                <producer> Ed Sheeran</producer>
+                <producer> Benny Blanco </producer>  
+                <producer> Benjamin Levin </producer>  
+            </productionTeam>
+        </song>
+
+        <!--Display for song 3-->
+        <song songID="SN03" type="Album Track" length="2:37">
+            <songTitle> Soleil Soleil </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C3"> </songCover>
+                <genre> Folk </genre>
+                <album> Les failles </album>
+                <release> 2019 </release>
+                <language> French </language>
+                <ratings> 4.6/5 </ratings>
+                <price discount="10%"> NRs. 550 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG08G" nationality="French"> Pomme </singer>
+                <writer> Pomme  </writer>
+                <producer> Pomme </producer>
+                <producer>Albin de la Simone </producer>
+                <director> François Poggio </director>
+                <director> Renée Largeron </director>
+            </productionTeam>
+        </song>
+        
+        <!--Display for song 4-->
+        <song songID="SN04" type="Single" length="4:04">
+            <songTitle> End Game </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C4"> </songCover>
+                <genre> Hip hop </genre>
+                <album> Reputation </album>
+                <release> 2017 </release>
+                <language> English </language>
+                <ratings> 4.3/5 </ratings>
+                <price> NRs. 500 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG02G" nationality="American"> Taylor Swift </singer>
+                <featuredArtist artistID="SG03G"> Ed Sheeran  </featuredArtist>
+                <featuredArtist artistID="SG04G"> Future </featuredArtist>
+                <writer> Taylor Swift  </writer>
+                <writer> Johnathan Yip </writer>
+                <producer> Max Martin </producer>
+                <producer> Shellback </producer>  
+            </productionTeam>
+        </song>
+
+        <!--Display for song 5-->
+        <song songID="SN05" type="Single" length="4:36">
+            <songTitle> Bari Lai </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C5"> </songCover>
+                <genre> Soul </genre>
+                <release> 2016 </release>
+                <language> Nepali </language>
+                <ratings> 3.3/5 </ratings>
+                <price discount="10%"> NRs. 400 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG01G" nationality="Nepali"> Pahenlo Batti Muni  </singer>
+                <writer> Pahenlo Batti Muni  </writer>
+                <producer> Rohit Shakya </producer>
+                <producer> Range Studio </producer>
+                <director>  Shailendra Paudyal  </director>
+                <director> Prakash Ranjit </director>
+            </productionTeam>
+        </song>
+
+        <!--Display for song 6-->
+        <song songID="SN06" type="Album Track" length="5:55">
+            <songTitle> Bohemian Rhapsody </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C6"> </songCover>
+                <genre> Rock </genre>
+                <album> A Night at the Opera </album>
+                <release> 1975 </release>
+                <language> English </language>
+                <ratings> 4.8/5 </ratings>
+                <price discount="5%"> NRs. 600 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG09G" nationality="American"> Queen (band) </singer>
+                <writer> Freddie Mercury  </writer>
+                <producer> Roy Thomas Baker </producer>
+                <producer> Queen </producer>
+                <director> Roy Thomas Baker </director>
+                <director> Queen </director>
+            </productionTeam>
+        </song>
+
+        <!--Display for song 6-->
+        <song songID="SN06" type="Single" length="4:54">
+            <songTitle> Fix You </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C7"> </songCover>
+                <genre> Alternative Rock </genre>
+                <album> X &#38; Y </album>
+                <release> 2005 </release>
+                <language> English </language>
+                <ratings> 4.5/5 </ratings>
+                <price> NRs. 470 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG08G" nationality="American"> Coldplay </singer>
+                <writer> Chris Martin  </writer>
+                <writer> Jonny Buckland </writer>
+                <writer> Guy Berryman </writer>
+                <writer> Will Champion </writer>
+                <director> Coldplay </director>
+                <director> Sophie Muller </director>
+            </productionTeam>
+        </song>    
+
+        <!--Display for song 8-->
+        <song songID="SN08" type="Album Track" >
+            <songTitle> La La La </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C8"> </songCover>
+                <genre> Dance Pop </genre>
+                <album> Hotel Cabana </album>
+                <release> 2013 </release>
+                <ratings> 3.5/5 </ratings>
+                <price discount="20%"> NRs. 500 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG05G" nationality="British"> Naughty Boy </singer>
+                <featuredArtist artistID="SG06G"> Sam Smith </featuredArtist>
+                <writer> Shahid Khan  </writer>
+                <writer> Al-Hakam El-Kaubaisy </writer>
+                <writer> Frobisher Mbabazi </writer>
+                <producer> Komi </producer>
+                <producer> Mojam </producer>  
+            </productionTeam>
+        </song>     
+        
+        <!--Display for song 9-->
+        <song songID="SN09" type="Single" length="4:05">
+            <songTitle> When We Were Young </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C9"> </songCover>
+                <genre> Soul </genre>
+                <album> 25 </album>
+                <release> 2015 </release>
+                <language> English </language>
+                <ratings> 4/5 </ratings>
+                <price > NRs. 560 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG15G" nationality="British"> Adele </singer>
+                <writer> Adele Adkins  </writer>
+                <writer> Tobias Jesso Jr. </writer>
+                <producer> 	Ariel Rechtshaid </producer>
+                <producer> Adele </producer>
+                <director> Ariel Rechtshaid </director>
+                <director> Adele </director>  
+            </productionTeam>
+        </song>  
+
+        <!--Display for song 10-->
+        <song songID="SN10" type="Album Track" length="4:04">
+            <songTitle> Everything Has Changed </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C10"> </songCover>
+                <genre> Folk-pop </genre>
+                <album> Red </album>
+                <release> 2013 </release>
+                <language> English </language>
+                <ratings> 4.1/5 </ratings>
+                <price discount="10%"> NRs. 470 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG02G" nationality="American"> Taylor Swift</singer>
+                <featuredArtist artistID="SG03G"> Ed Sheeran  </featuredArtist>
+                <writer> Taylor Swift  </writer>
+                <writer> Ed Sheeran </writer>
+                <producer> 	Butch Walker </producer>
+                <producer> Taylor Swift </producer>
+            </productionTeam>
+        </song>
+
+        <!--Display for song 11-->
+        <song songID="SN11" type="Single" length="4:07">
+            <songTitle> Riha </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C11"> </songCover>
+                <genre> Soul </genre>
+                <release> 2019 </release>
+                <language> English </language>
+                <ratings> 3.5/5 </ratings>
+                <price> NRs. 400 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG10G" nationality="Indian"> Anuv Jain </singer>
+                <writer> Anuv Jain  </writer>
+                <writer> Angad Singh Bahra </writer>
+                <producer> Anuv Jain </producer>
+                <producer> Uneven Studios </producer>
+                <director> Anuv Jain</director>
+                <director> Angad Singh Bahra </director>
+            </productionTeam>
+        </song> 
+
+        <!--Display for song 12-->
+        <song songID="SN12" type="Single" length="4:07">
+            <songTitle> FRIENDS </songTitle>
+
+            <songDescription> 
+                <songCover coverID="C12"> </songCover>
+                <genre> Pop </genre>
+                <album> Speak Your Mind </album>
+                <release> 2018 </release>
+                <language> English </language>
+                <ratings> 4.6/5 </ratings>
+                <price discount="20%"> NRs. 580 </price>
+            </songDescription>
+    
+            <productionTeam> 
+                <singer singerID="SG12G" nationality="British"> Anne-Marie </singer>
+                <featuredArtist artistID="SG14G"> Marshmello  </featuredArtist>
+                <writer> Marshmello </writer>
+                <writer> Anne-Marie </writer>
+                <writer> Nicholson </writer>
+                <writer> Richard Boardman </writer>
+                <producer> Marshmello </producer>
+                <director> Hannah Lux Davis </director>
+            </productionTeam>
+        </song>
+    
+    </songs>
+
+    <!--footer of the web page-->
+    <footer> 
+        <footerLogo> </footerLogo>
+        <contactDetails> <!--all contact information of the store-->
+            <address> Gairidhara, Kathmandu </address>
+            <phoneNumber> 01-4400001 </phoneNumber>
+            <phoneNumber> 9841000001 </phoneNumber>
+            <email> swooshmusic@gmail.com </email>
+            <url> www.swooshmusicstore.com </url>
+        </contactDetails>
+        <!--copyright text-->
+        <copyright> Copyright © Swoosh Music. All rights Reserved. </copyright>
+    </footer>
+
+</store>

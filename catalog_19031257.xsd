@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--STORE-->
+    <xs:element name="store">
+    
+        <xs:complexType>
+            <xs:sequence>
+                <!--STORE DETAILS-->
+                <xs:element name="storeDetails">
+                    <!--STORE DETAILS ELEMENTS-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="logo"/>
+                            <xs:element type="xs:string" name="storeName"/> 
+                            <xs:element type="xs:string" name="description"/>
+                            <xs:element type="xs:string" name="aboutUs"/>
+                        </xs:sequence>
+                    </xs:complexType>        
+                </xs:element>
+
+                <!--SONGS-->
+                <xs:element name="songs"> 
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--SONG-->
+                            <xs:element name="song" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="songTitle"/>
+                                        <!--SONG DESCRIPTION-->
+                                        <xs:element name="songDescription">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="songCover">
+                                                        <xs:complexType>
+                                                                <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                        <xs:attribute type="xs:string" name="coverID" use="optional"/>
+                                                                    </xs:extension>
+                                                                </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="genre"/>
+                                                    <xs:element type="xs:string" name="album" maxOccurs="1" minOccurs="0"/>
+                                                    <xs:element type="xs:float" name="release"/>
+                                                    <xs:element type="xs:string" name="language" maxOccurs="1" minOccurs="0"/>
+                                                    <xs:element type="xs:string" name="ratings"/>
+                                                    <xs:element name="price">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:string" name="discount" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!--PRODUCTION TEAM-->
+                                        <xs:element name="productionTeam">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="singer">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="singerID" use="required">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:pattern value="[S][G][0-9][0-9][G]"/>
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute> 
+                                                                    <xs:attribute type="xs:string" name="nationality" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="featuredArtist" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="artistID" use="required">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:pattern value="[S][G][0-9][0-9][G]"/>
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute> 
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="writer" maxOccurs="unbounded" minOccurs="1"/>
+                                                    <xs:element type="xs:string" name="producer" maxOccurs="unbounded" minOccurs="0"/>
+                                                    <xs:element type="xs:string" name="director" maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute  name="songID" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[S][N][0-9][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute type="xs:string" name="type"/>
+                                    <xs:attribute type="xs:string" name="length" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!--FOOTER-->
+                <xs:element name="footer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="footerLogo"/>
+                            <!--CONTACT DETAILS-->
+                            <xs:element name="contactDetails">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="address"/>                      
+                                        <xs:element type="xs:string" name="phoneNumber" maxOccurs="unbounded" minOccurs="1"/>
+                                        <xs:element type="xs:string" name="email"/>
+                                        <xs:element type="xs:string" name="url"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="copyright"/>                
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
